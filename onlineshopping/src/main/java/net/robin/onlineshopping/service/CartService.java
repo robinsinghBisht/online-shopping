@@ -15,7 +15,7 @@ import net.robin.shoppingbackend.dto.Cart;
 import net.robin.shoppingbackend.dto.CartLine;
 import net.robin.shoppingbackend.dto.Product;
 
-@Service("cartService")
+@Service
 public class CartService {
 
 	@Autowired

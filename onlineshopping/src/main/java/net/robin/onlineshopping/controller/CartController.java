@@ -13,7 +13,7 @@ import net.robin.onlineshopping.service.CartService;
 
 //import java.util.logging.Logger;
 
-@Controller
+@Controller("cartController")
 @RequestMapping("/cart")
 public class CartController {
 
@@ -21,9 +21,10 @@ public class CartController {
 	
 	@Autowired
 	private CartService cartService;
+	
 	@RequestMapping("/show")
 	public ModelAndView showCart(@RequestParam(name = "result", required = false) String result) {
-		
+		System.out.println("fdf");
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Shopping Cart");
 		mv.addObject("userClickShowCart", true);

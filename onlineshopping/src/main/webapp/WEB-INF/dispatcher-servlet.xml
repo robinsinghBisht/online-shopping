@@ -14,7 +14,7 @@
     http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd        
     " >
 
-	<context:component-scan base-package="net.robin.onlineshopping.controller"/>
+	<context:component-scan base-package="net.robin.onlineshopping"/>
 	<context:component-scan base-package="net.robin.shoppingbackend"/>
 
 	<bean id="viewResolver"
