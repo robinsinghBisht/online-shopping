@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class HibernateConfig {
 
 	// Change the below based on the DBMS you choose
-	private final static String DATABASE_URL = "jdbc:h2:~/test";
+	private final static String DATABASE_URL = "jdbc:h2:tcp://localhost/~/test";
 	private final static String DATABASE_DRIVER = "org.h2.Driver";
 	private final static String DATABASE_DIALECT = "org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME = "sa";
@@ -45,7 +45,7 @@ public class HibernateConfig {
 	
 	// sessionFactory bean will be available
 	
-	@Bean
+	@Bean("sessionFactory")
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 		
 		LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource);
