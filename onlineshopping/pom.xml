@@ -16,6 +16,13 @@
 		
 	</properties>
 
+	<parent>
+    <groupId>net.robin</groupId>
+    <artifactId>shoppingapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+   </parent>
+
+
 	<dependencies>
 
 		<!-- Link backend project -->
