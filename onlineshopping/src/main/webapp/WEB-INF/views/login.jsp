@@ -114,6 +114,9 @@
           </div>
          </div>
         </form>
+        <div class="text-right" style="margin-top:10px;">
+          <a href="${contextRoot}/forgot-password" class="btn btn-link">Forgot Password?</a>
+        </div>
        
        </div>
        <div class="panel-footer">
